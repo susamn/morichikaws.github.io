@@ -1,5 +1,5 @@
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
-    ? '/morichika.github.io/'
+    ? '/morichikaws.github.io/'
     : '/'
 }
