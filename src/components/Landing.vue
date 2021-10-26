@@ -31,6 +31,7 @@ export default {
   position: absolute;
   top: 8px;
   left: 16px;
+  -webkit-text-stroke: 2px white; /* width and color */
 }
 .bottom-left{
   position: absolute;
@@ -41,7 +42,6 @@ export default {
   width: 100%;
   height: 300px;
   object-fit: cover;
-  opacity: 60%;
 }
 .header-text{
   font-family: serif;
