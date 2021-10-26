@@ -1,6 +1,13 @@
 <template>
   <div class="container">
-    <img alt="Header" class="header" src="../assets/images/header.jpeg">
+    <div class="jumbotron">
+      <div class="header-container">
+        <p class="header-text top-left text-dark display-4">Welcome to Morichika Welfare Society</p>
+        <img class="header" src="../assets/images/header.jpeg" alt=""/>
+        <p class="header-text bottom-left text-light">A community to help the community. For the community, to the community.</p>
+      </div>
+    </div>
+
   </div>
 </template>
 
@@ -15,18 +22,29 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+.header-container{
+  position: relative;
+  text-align: center;
+  color: white;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+.bottom-left{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
 }
-a {
-  color: #42b983;
+.header{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  opacity: 60%;
 }
+.header-text{
+  font-family: serif;
+}
+
 </style>
