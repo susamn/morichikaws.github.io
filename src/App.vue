@@ -1,15 +1,15 @@
 <template>
 
-  <LandingPage />
+  <Landing />
 </template>
 
 <script>
-import LandingPage from "./components/LandingPage";
+import Landing from "./components/Landing";
 
 export default {
   name: 'App',
   components: {
-    LandingPage,
+    Landing,
   }
 }
 </script>
