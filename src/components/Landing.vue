@@ -16,61 +16,75 @@
 
     <div class="info flex-column px-5">
       <div class="row">
-        <div class="mission col-lg-6 col-md-12 col-sm-12 mt-md-4 mt-sm-4">
+        <div class="mission col">
           <div class="mission-title p-2">Our Mission</div>
-          <div class="mission-text p-2">Our mission is to build a global community. From last 5 years we have been helping
+          <div class="mission-text p-4">Our mission is to build a global community. From last 5 years we have been helping
           in different ways and have been contributing to the community. We support young kids in their journey to achieving
           education and fulfil their dream. So far we have been able to support 43 kids. Our mission is to support more
           and more kids like this. We also arrange food and clothes distribution arrangements. Our all Morichika family and a
           lot of people celebrate their birthday and special occassions with Morichika by contributing some money in feeding
           some kids or supporting thier education endavours.</div>
         </div>
-        <div class="links col-lg-6 col-md-12 col-sm-12 mx-auto  mt-md-4 mt-sm-4">
-          <div class="mx-auto ">
-            <div class="row">
-              <div class="col-4">
-                <img src="../assets/images/about.jpg" class="links-icon" alt="about"/>
-                <p class="text-center">About</p>
-              </div>
 
-              <div class="col-4">
-                <img src="../assets/images/community.jpg" class="links-icon" alt="about"/>
-                <p class="text-center">Community</p>
-              </div>
-
-              <div class="col-4">
-                <img src="../assets/images/initiatives.jpg" class="links-icon" alt="about"/>
-                <p class="text-center">Initiatives</p>
-              </div>
-            </div>
-
+        <div class="row mt-5 justify-content-center" id="videoContainer">
+          <div class="col-auto">
+            <img src="../assets/images/about.jpg" class="links-icon" alt="about"/>
+            <p class="text-center">About</p>
           </div>
+
+          <div class="col-auto">
+            <img src="../assets/images/community.jpg" class="links-icon" alt="about"/>
+            <p class="text-center">Community</p>
+          </div>
+
+          <div class="col-auto">
+            <img src="../assets/images/initiatives.jpg" class="links-icon" alt="about"/>
+            <p class="text-center">Programmes</p>
+          </div>
+
+          <div class="col-auto">
+            <img src="../assets/images/strategy.jpg" class="links-icon" alt="about"/>
+            <p class="text-center">Strategy</p>
+          </div>
+
+          <div class="col-auto">
+            <img src="../assets/images/globe.jpg" class="links-icon" alt="about"/>
+            <p class="text-center">Geographical Reach</p>
+          </div>
+
+          <div class="col-auto">
+            <img src="../assets/images/achievements.jpg" class="links-icon" alt="about"/>
+            <p class="text-center">Achievements</p>
+          </div>
+
+          <div class="col-auto">
+            <img src="../assets/images/success.jpg" class="links-icon" alt="about"/>
+            <p class="text-center">Success Stories</p>
+          </div>
+
         </div>
       </div>
     </div>
 
     <div class="p-3 m-3 images-container">
       <div class="images">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="row justify-content-center">
+          <div class="col-auto">
             <img src="../assets/images/activity1.jpg" class="activity" alt="act1"/>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="col-auto">
             <img src="../assets/images/activity2.jpg" class="activity" alt="act1"/>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="col-auto">
             <img src="../assets/images/activity5.jpg" class="activity" alt="act1"/>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="col-auto">
             <img src="../assets/images/activity6.jpg" class="activity" alt="act1"/>
           </div>
-        </div>
-
-        <div class="row mt-3">
-          <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="col-auto">
             <img src="../assets/images/activity7.jpg" class="activity" alt="act1"/>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="col-auto">
             <img src="../assets/images/activity8.jpg" class="activity" alt="act1"/>
           </div>
         </div>
@@ -78,15 +92,29 @@
       </div>
     </div>
 
+    <div class="donate-link text-center mt-2">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfzWkjU8Cc3nMCovckGOySxLSAun8appfCM6Tq2-XSfmTLSHQ/viewform?usp=sf_link" class="badge badge-primary">
+        <span  class="donate-label">Donate</span>
+      </a>
+    </div>
+
+    <Graphics class="mt-5" />
+
+    <Footer/>
+
   </div>
 </template>
 <script>
+import Graphics from "./Graphics";
+import Footer from "./Footer";
 export default {
   name: 'Landing',
   props: {
     msg: String
   },
   components:{
+    Footer,
+    Graphics
   }
 }
 </script>
@@ -130,23 +158,37 @@ export default {
 }
 
 .mission{
-  background: #FCDEB0;
+  background: #c68522;
+  color: white;
   border-radius: 30px;
 }
 
 .activity {
-  width: 15rem;
+  width: 20rem;
   height: 10rem;
   object-fit: cover;
   border-radius: 10px;
+  margin: 10px 10px;
 }
 
 .images-container{
-  background: #FCDEB0;
-  border-radius: 30px;
+  #background: #FCDEB0;
+  #border-radius: 30px;
 }
 
+.donate-link{
+  display: block;
+  font-size: 3rem;
+}
 
+.donate-label{
+  border: 1px solid #FCDE10;
+  padding: 1rem 1rem;
+  border-radius: 20px;
+  background: #c68522;
+  color: white;
+  text-decoration: none;
+}
 
 
 
